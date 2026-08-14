@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 42" width="170" height="42">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E5C4" />
+      <stop offset="100%" stop-color="#E6C387" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#70F3FF" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Tap in White -->
+  <text x="2" y="30" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" letter-spacing="-0.5">Tap</text>
+
+  <!-- It in Gold -->
+  <text x="52" y="30" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="28" fill="url(#goldGrad)" letter-spacing="-0.5">It</text>
+
+  <!-- Full-Sized Designer X (Matching TapIt height with clean diagonal crossing stroke) -->
+  <g transform="translate(80, 0)">
+    <text x="0" y="30" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="28" fill="url(#cyanGrad)">X</text>
+    <!-- Clean diagonal designer slash stroke extending through X -->
+    <path d="M -5 34 L 24 6" stroke="url(#cyanGrad)" stroke-width="3" stroke-linecap="round" opacity="0.9" />
+  </g>
+</svg>

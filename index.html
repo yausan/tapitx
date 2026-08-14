@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TapItX — Earn Money, Grow Skills & Build Financial Freedom</title>
+  <meta name="description" content="TapIt is Nepal's premier gaming reward platform created by Yausan Adhikari (Karma). Turn your gaming time into real financial growth & NPR rewards. Available on Google Play Store.">
+  <meta name="keywords" content="TapIt, TapItX, Yausan Adhikari, Karma Nepal, earn money playing games, student financial growth, play to earn Nepal, eSewa cash games">
+  
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:title" content="TapItX — Earn Money, Grow Skills & Build Financial Freedom">
+  <meta property="og:description" content="Turn your gaming time into real money (NPR) rewards. Available now on Google Play Store. Founded by Karma from Nepal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tapitx.com">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/tapit_logo.png">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top White Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- Subtly Animated Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="bg-spotlight-top"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/tapit_logo.png" alt="TapIt Logo Icon" class="brand-icon">
+        <img src="assets/tapitx_text.svg" alt="TapItX" class="brand-text-svg">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#earning" class="nav-link">Earning</a></li>
+        <li><a href="#growth" class="nav-link">Skill Growth</a></li>
+        <li><a href="#founder" class="nav-link">Development</a></li>
+        <li><a href="#demo" class="nav-link">Web Demo</a></li>
+        <li><a href="#calculator" class="nav-link">Growth Calculator</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#demo" class="btn btn-secondary btn-sm">Try Demo</a>
+        <button class="btn btn-primary btn-sm" onclick="downloadAPK()">Get On Play Store</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Verified Security & Trust Bar -->
+  <div class="security-strip">
+    <div class="container security-flex">
+      <div class="sec-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <span>Real NPR Cash Payouts</span>
+      </div>
+      <div class="sec-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        <span>Skill & Reflex Development</span>
+      </div>
+      <div class="sec-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span>Google Play Store Active</span>
+      </div>
+      <div class="sec-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span>Founded in Nepal 🇳🇵</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal active">
+          <div class="hero-pill">STUDENT FINANCIAL OPPORTUNITY • EARN & GROW</div>
+
+          <h1 class="title-hero">
+            Turn Gaming Time Into <span>Financial Growth.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Most games waste your time without giving anything back. TapIt flips the script by turning your speed, reflexes, and daily gaming into real money (NPR) rewards.
+          </p>
+
+          <div class="hero-buttons">
+            <!-- Google Play Store (Available Now) -->
+            <button class="btn btn-primary btn-lg" onclick="downloadAPK()">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.55.33-1.02.84-1.22l11.64 9.72L3.84 21.72C3.33 21.52 3 21.05 3 20.5zm14.18-7.22l2.67-1.53c.6-.34.6-1.22 0-1.56l-2.67-1.53-2.67 2.31 2.67 2.31zM4.7 2.45l10.28 8.58-2.65 2.29L4.7 2.45zM4.7 21.55l7.63-10.87 2.65 2.29-10.28 8.58z"/></svg>
+              <span>Download & Start Earning</span>
+            </button>
+
+            <!-- App Store iOS (Coming Soon) -->
+            <button class="btn btn-secondary btn-lg" style="opacity: 0.75; cursor: default;" title="iOS App Store Version Coming Soon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.36c.66-.8 1.11-1.92.99-3.04-.96.04-2.12.64-2.81 1.45-.61.71-1.15 1.86-1.01 2.96 1.07.08 2.17-.57 2.83-1.37z"/></svg>
+              <span>App Store (Coming Soon)</span>
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-val">Rs. 50,00,000+</span>
+              <span class="stat-label">Total Cash Distributed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">100,000+</span>
+              <span class="stat-label">Active Student Earners</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">+25%</span>
+              <span class="stat-label">Daily Reflex Growth</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Growth & Earning Black & White Phone UI Mockup -->
+        <div class="hero-visual reveal-right active">
+          <div class="native-phone-mockup">
+            <div class="phone-screen">
+              <div class="phone-header-bar">
+                <span>09:41</span>
+                <span>TapIt Earning v1.4</span>
+                <span>⚡ 100%</span>
+              </div>
+
+              <div class="phone-wallet-card">
+                <div class="phone-wallet-lbl">LIVE CASH BALANCE</div>
+                <div class="phone-wallet-val">Rs. 2,450.00</div>
+                <div style="font-size: 0.68rem; color: #FFFFFF; margin-top: 4px;">↑ +Rs. 300 Earned Today</div>
+              </div>
+
+              <div style="font-size: 0.7rem; letter-spacing: 0.1em; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 8px;">EARN VIA GAMES</div>
+
+              <div class="phone-game-tile">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 1.2rem;">🏎️</span>
+                  <div>
+                    <div class="phone-game-name">F1 Speed Race</div>
+                    <div style="font-size: 0.65rem; color: var(--text-secondary);">Earn Rs. 50 / Race</div>
+                  </div>
+                </div>
+                <span class="phone-game-btn">EARN</span>
+              </div>
+
+              <div class="phone-game-tile">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 1.2rem;">💣</span>
+                  <div>
+                    <div class="phone-game-name">Cannon Duel 1v1</div>
+                    <div style="font-size: 0.65rem; color: var(--text-secondary);">Prize Pool Matches</div>
+                  </div>
+                </div>
+                <span class="phone-game-btn">DUEL</span>
+              </div>
+
+              <div class="phone-game-tile">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 1.2rem;">👆</span>
+                  <div>
+                    <div class="phone-game-name">TapIt! Frenzy</div>
+                    <div style="font-size: 0.65rem; color: var(--text-secondary);">5x Coin Multipliers</div>
+                  </div>
+                </div>
+                <span class="phone-game-btn">TAP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Earning & Growth Pillars -->
+  <section id="earning" class="section" style="background: var(--bg-surface-1);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">EARNING & GROWTH PILLARS</span>
+        <h2 class="section-title">Why TapIt Builds <span class="text-white-bold">Real Value</span></h2>
+        <p class="section-desc">Instead of leaving gamers empty-handed, TapIt converts skill and time into financial rewards and personal growth.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card reveal-left reveal-delay-1">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="card-title">1. Financial Income</h3>
+          <p class="card-desc">Compete in tournaments, leaderboard challenges, and daily tasks to earn real money (NPR) transferred directly to eSewa, Khalti, or mobile recharge.</p>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3 class="card-title">2. Skill & Reflex Growth</h3>
+          <p class="card-desc">Challenge your reaction speed, focus, and strategic timing. The faster your reflexes improve, the higher your earning multiplier climbs.</p>
+        </div>
+
+        <div class="card reveal-right reveal-delay-3">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="card-title">3. Student Development</h3>
+          <p class="card-desc">Designed as a productive part-time earning opportunity for students. Earn pocket money independently while playing games you love.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Development Story -->
+  <section id="founder" class="section">
+    <div class="container">
+      <div class="founder-box reveal">
+        <div class="founder-header">
+          <div class="founder-avatar">YA</div>
+          <div>
+            <h3 class="founder-name">The Vision of Karma</h3>
+            <div class="founder-role">Founded by Yausan Adhikari (Karma) • Kathmandu, Nepal 🇳🇵</div>
+          </div>
+        </div>
+
+        <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; font-weight: 400;">
+          Karma noticed how millions of students and young gamers in Nepal spend hours playing mobile games daily without anything to show for it. Struggling with limited pocket money, their time was wasted. That led him to ask:
+        </p>
+
+        <div class="founder-quote">
+          “Why should gaming only waste your time when your skills and focus can help you earn real money and build financial independence?”
+        </div>
+
+        <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 28px; font-weight: 400;">
+          That question sparked the creation of <strong>TapIt</strong>—a platform designed around <strong>Play & Earn</strong>. TapIt gives students in Nepal and worldwide a legitimate, fun way to earn pocket money while sharpening their mental reflexes.
+        </p>
+
+        <div style="border-top: 1px solid var(--border-white-subtle); padding-top: 28px;">
+          <h4 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 18px; color: #FFFFFF;">Why TapIt Drives Real Growth:</h4>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; font-size: 0.92rem; color: var(--text-secondary); font-weight: 500;">
+            <div>✔ Converts daily gaming hours into real income.</div>
+            <div>✔ Instant redemptions via eSewa & Khalti in Nepal.</div>
+            <div>✔ Financial independence & pocket money for students.</div>
+            <div>✔ Continuous skill improvement & tournament rewards.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Web Demo Section -->
+  <section id="demo" class="section" style="background: var(--bg-surface-1);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">LIVE DEMO EXHIBITION</span>
+        <h2 class="section-title">Test Your <span class="text-white-bold">Earning Reflexes</span></h2>
+        <p class="section-desc">Tap fast to build your combo multiplier. Score 20 taps to unlock a +50 bonus coin reward!</p>
+      </div>
+
+      <div class="demo-box reveal">
+        <div style="font-size: 0.78rem; letter-spacing: 0.15em; color: var(--text-secondary); text-transform: uppercase;">LIVE DEMO COINS</div>
+        <div class="demo-score-display" id="tapScoreVal">0</div>
+        <div id="tapMultiplierVal" style="display: inline-block; padding: 4px 14px; background: rgba(255,255,255,0.08); border: 1px solid var(--border-white); border-radius: 99px; color: #FFFFFF; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 800;">1x MULTIPLIER</div>
+
+        <div style="position: relative;">
+          <button class="demo-btn-target" id="tapOrbBtn">TAP & EARN</button>
+          <div id="particleContainer" style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;"></div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-secondary); font-weight: 400;">
+          Tap rapidly within 450ms to build your combo multiplier up to 5x.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Growth & Financial Earning Calculator (NPR) -->
+  <section id="calculator" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">GROWTH & PAYOUT CALCULATOR</span>
+        <h2 class="section-title">Calculate Your <span class="text-white-bold">Earnings (Rs.)</span></h2>
+        <p class="section-desc">Adjust the playtime slider to calculate your estimated cash earnings in Nepalese Rupees (NPR).</p>
+      </div>
+
+      <div class="calc-box reveal">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <label for="playtimeSlider" style="font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-secondary); font-weight: 700;">Daily Play Time</label>
+          <span id="playtimeVal" style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 900; color: #FFFFFF;">25 Mins/Day</span>
+        </div>
+        <input type="range" id="playtimeSlider" min="5" max="60" value="25" step="5">
+
+        <div class="calc-grid">
+          <div>
+            <div class="calc-val" id="dailyRewardVal">Rs. 300</div>
+            <div class="calc-lbl">Daily Estimated Income</div>
+          </div>
+          <div>
+            <div class="calc-val" id="weeklyRewardVal">Rs. 2,100</div>
+            <div class="calc-lbl">Weekly Estimated Income</div>
+          </div>
+          <div>
+            <div class="calc-val" id="monthlyRewardVal">Rs. 9,000</div>
+            <div class="calc-lbl">Monthly Estimated Income</div>
+          </div>
+        </div>
+
+        <div class="partner-strip">
+          <span class="partner-badge">eSewa</span>
+          <span class="partner-badge">Khalti</span>
+          <span class="partner-badge">PayPal</span>
+          <span class="partner-badge">Mobile Recharge</span>
+          <span class="partner-badge">Amazon Gift Cards</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section" style="background: var(--bg-surface-1);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">EARNING & DISCLOSURES</span>
+        <h2 class="section-title">Frequently Asked <span class="text-white-bold">Questions</span></h2>
+      </div>
+
+      <div class="faq-wrap reveal">
+        <div class="faq-card active">
+          <div class="faq-q">
+            <span>Is TapIt completely free to earn?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-a">
+            Yes, TapIt is 100% free. There are no registration fees, deposit requirements, or hidden costs. Download from Google Play Store, play games, and cash out your rewards.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <span>How do redemptions work in Nepal?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-a">
+            Your earned rewards are credited instantly to your cloud wallet. You can redeem directly to <strong>eSewa</strong>, <strong>Khalti</strong>, <strong>Mobile Recharge</strong>, or global options like PayPal.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <span>Which app stores are supported?</span>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-a">
+            TapIt is available right now on the <strong>Google Play Store</strong> for Android devices (v6.0+). The Apple App Store version for iOS is in final review and coming soon!
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <span>How does TapIt support student growth?</span>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-a">
+            TapIt provides a productive part-time opportunity for students to earn pocket money while sharpening their mental agility, focus, and reaction reflexes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA Banner -->
+  <section class="section" style="padding-bottom: 120px;">
+    <div class="container">
+      <div class="calc-box reveal" style="text-align: center;">
+        <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 16px;">Start Earning & Growing Today</h2>
+        <p style="color: var(--text-secondary); max-width: 540px; margin: 0 auto 32px auto; font-weight: 400;">Turn your speed into real money. Download TapIt from Google Play Store now and claim your +50 Welcome Bonus Coins.</p>
+        
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <button class="btn btn-primary btn-lg" onclick="downloadAPK()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.55.33-1.02.84-1.22l11.64 9.72L3.84 21.72C3.33 21.52 3 21.05 3 20.5zm14.18-7.22l2.67-1.53c.6-.34.6-1.22 0-1.56l-2.67-1.53-2.67 2.31 2.67 2.31zM4.7 2.45l10.28 8.58-2.65 2.29L4.7 2.45zM4.7 21.55l7.63-10.87 2.65 2.29-10.28 8.58z"/></svg>
+            <span>Get on Play Store</span>
+          </button>
+          <button class="btn btn-secondary btn-lg" style="opacity: 0.75; cursor: default;" title="iOS App Store Version Coming Soon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.36c.66-.8 1.11-1.92.99-3.04-.96.04-2.12.64-2.81 1.45-.61.71-1.15 1.86-1.01 2.96 1.07.08 2.17-.57 2.83-1.37z"/></svg>
+            <span>iOS App Store (Coming Soon)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reward Modal -->
+  <div class="modal-overlay" id="rewardModal">
+    <div class="modal-card">
+      <h3 class="modal-title" style="font-family: var(--font-heading); font-size: 2rem; color: #FFFFFF;">Congratulations</h3>
+      <p style="color: var(--text-secondary); margin: 14px 0 28px 0; font-size: 0.95rem; font-weight: 400;">You scored 20+ Coins in the TapIt Demo! Download TapIt from Google Play Store now to claim your <strong>+50 Bonus Coins</strong> welcome reward.</p>
+      <button class="btn btn-primary" onclick="downloadAPK(); document.getElementById('rewardModal').classList.remove('active');" style="width: 100%; margin-bottom: 12px;">Get on Google Play Store</button>
+      <button class="btn btn-secondary close-modal" style="width: 100%;">Keep Playing Demo</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <img src="assets/tapit_logo.png" alt="TapIt Logo Icon" class="brand-icon">
+            <img src="assets/tapitx_text.svg" alt="TapItX" class="brand-text-svg">
+          </a>
+          <p>The gaming & reward platform founded by Karma. Empowering students and gamers in Nepal to turn gaming time into real money (NPR) and financial growth.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#earning">Financial Earning</a></li>
+            <li><a href="#growth">Reflex Growth</a></li>
+            <li><a href="#founder">Student Opportunity</a></li>
+            <li><a href="#demo">Web Demo</a></li>
+            <li><a href="#calculator">Earning Calculator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Earning Games</h4>
+          <ul class="footer-links">
+            <li><a href="#demo">TapIt! Frenzy</a></li>
+            <li><a href="#demo">F1 Speed Runner</a></li>
+            <li><a href="#demo">Cannon Duel 1v1</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Social & Support</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/officialtapitgame" target="_blank" rel="noopener">Instagram (@officialtapitgame)</a></li>
+            <li><a href="#">Facebook Official Page</a></li>
+            <li><a href="mailto:support@tapitx.com">support@tapitx.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 TapItX.com. All Rights Reserved.</div>
+        <div>Founded by Yausan Adhikari (Karma) • Kathmandu, Nepal 🇳🇵</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
